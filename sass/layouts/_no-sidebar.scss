@@ -9,4 +9,18 @@
 			"footer";
 		justify-content:center;
 	}
+	header#mastheader, main#primary, footer#colophon {
+		background-color: $color__background-body;
+		padding: 0 30px;
+		width: 1024px;
+	}
+	header {
+		grid-area: header;
+	}
+	main {
+		grid-area: main;
+	}
+	footer {
+		grid-area: footer;
+	}
 }

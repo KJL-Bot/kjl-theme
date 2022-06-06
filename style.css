@@ -457,7 +457,7 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-	background: #fff;
+	background: #ffd02f;
 }
 
 hr {
@@ -626,6 +626,24 @@ textarea {
 	grid-template-columns: auto;
 	grid-template-areas: "header" "main" "footer";
 	justify-content: center;
+}
+
+.no-sidebar header#mastheader, .no-sidebar main#primary, .no-sidebar footer#colophon {
+	background-color: #fff;
+	padding: 0 30px;
+	width: 1024px;
+}
+
+.no-sidebar header {
+	grid-area: header;
+}
+
+.no-sidebar main {
+	grid-area: main;
+}
+
+.no-sidebar footer {
+	grid-area: footer;
 }
 
 /*--------------------------------------------------------------
