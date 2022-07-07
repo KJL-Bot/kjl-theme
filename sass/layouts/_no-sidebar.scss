@@ -12,7 +12,14 @@
 	header#mastheader, main#primary, footer#colophon {
 		background-color: $color__background-body;
 		padding: 0 30px;
-		width: 1024px;
+		border: 3px solid #333;
+		margin-top: 30px;
+		@media screen and (min-width: 37.5em) {
+			width: 1024px;
+		}
+	}
+	.site-header {
+		grid-area: header;
 	}
 	header {
 		grid-area: header;
