@@ -24,8 +24,8 @@ function kjl_theme_custom_header_setup() {
 			array(
 				'default-image'      => get_template_directory_uri() . '/images/fireworks-574739__340.jpg',
 				'default-text-color' => '000000',
-				'width'              => 1024,
-				// 'height'             => 300,
+				'width'              => 1200,
+				'height'             => 300,
 				'flex-height'        => true,
 				'wp-head-callback'   => 'kjl_theme_header_style',
 			)
