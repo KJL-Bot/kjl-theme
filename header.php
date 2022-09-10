@@ -39,7 +39,7 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
-		<div class="site-branding">
+		<div class="site-branding" style="//background-image: url('<?php header_image(); ?>')">
 			<img alt="" src="<?php header_image(); ?>" width="auto<?php //echo absint( get_custom_header()->width ); ?>" height="auto<?php //echo absint( get_custom_header()->height ); ?>">
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
