@@ -134,6 +134,20 @@ function kjl_theme_widgets_init() {
 }
 add_action( 'widgets_init', 'kjl_theme_widgets_init' );
 
+function footer_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Footer widget arear',
+		'id'            => 'footer_center',
+		'before_widget' => '<div class="footer-widget">',
+		'after_widget'  => '</div>',
+		// 'before_title'  => '<h2 class="rounded">',
+		// 'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'footer_widgets_init' );
+
 /**
  * Enqueue scripts and styles.
  */
