@@ -13,17 +13,11 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kjl-theme' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'kjl-theme' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'kjl-theme' ), 'kjl-theme', '<a href="https://gabrielserwas.com">Gabriel Serwas</a>' );
-				?>
+			<?php if ( is_active_sidebar( 'footer_center' ) ) { ?>
+			<div id="footer_center" class="footer_center widget-area" role="complementary">
+				<?php dynamic_sidebar( 'footer_center' ); ?>
+			</div><!-- #primary-sidebar -->
+			<?php } ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
