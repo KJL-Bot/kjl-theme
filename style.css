@@ -388,7 +388,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: Roboto, sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -621,40 +621,82 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-.no-sidebar .site {
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-areas: "header" "main" "footer";
-	justify-content: center;
-}
-
-.no-sidebar header#mastheader, .no-sidebar main#primary, .no-sidebar footer#colophon {
+.no-sidebar #mastheader, .no-sidebar #primary {
 	background-color: #fff;
 	padding: 0 30px;
 	border: 3px solid #333;
 	margin-top: 30px;
+	max-width: 1200px;
 }
 
 @media screen and (min-width: 37.5em) {
-	.no-sidebar header#mastheader, .no-sidebar main#primary, .no-sidebar footer#colophon {
-		width: 1024px;
+	.no-sidebar #mastheader, .no-sidebar #primary {
+		width: 100%;
 	}
 }
 
-.no-sidebar .site-header {
-	grid-area: header;
+.no-sidebar #colophon {
+	margin-top: 30px;
+	background-color: #050038;
+	min-height: 100px;
+}
+
+.no-sidebar #colophon .site-info {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 15px;
+	text-align: center;
+}
+
+.no-sidebar #colophon .site-info a {
+	color: #fff;
+}
+
+.no-sidebar #colophon .site-info #menu-footer {
+	list-style: none;
+}
+
+.no-sidebar #colophon .site-info #menu-footer li a {
+	text-decoration: none;
+}
+
+.no-sidebar #colophon .site-info #menu-footer li a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (min-width: 37.5em) {
+	.no-sidebar #colophon {
+		width: 100%;
+	}
 }
 
 .no-sidebar header {
-	grid-area: header;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .no-sidebar main {
-	grid-area: main;
+	margin: 0 auto;
+	max-width: 1200px;
 }
 
 .no-sidebar footer {
-	grid-area: footer;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.no-sidebar .site-branding {
+	max-width: 1200px;
+	max-height: 600px;
+}
+
+.no-sidebar .site-branding img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+	background-size: contain;
+	margin: 0 auto;
 }
 
 /*--------------------------------------------------------------
@@ -796,7 +838,7 @@ textarea {
 
 .post,
 .page {
-	margin: 0 0 1.5em;
+	margin: 0;
 }
 
 .updated:not(.published) {
