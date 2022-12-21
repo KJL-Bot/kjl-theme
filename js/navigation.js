@@ -5,7 +5,7 @@
  * navigation support for dropdown menus.
  */
 ( function() {
-	const siteNavigation = document.getElementById( 'site-navigation' );
+	const siteNavigation = document.getElementById( '1site-navigation' );
 
 	// Return early if the navigation doesn't exist.
 	if ( ! siteNavigation ) {

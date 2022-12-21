@@ -28,7 +28,7 @@
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
 			<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button> -->
 			<?php
 			wp_nav_menu(
 				array(

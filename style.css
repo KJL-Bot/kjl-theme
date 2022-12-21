@@ -624,7 +624,7 @@ textarea {
 .no-sidebar #mastheader, .no-sidebar #primary {
 	background-color: #fff;
 	padding: 0 30px;
-	border: 3px solid #333;
+	border: 3px solid #050038;
 	margin-top: 30px;
 	max-width: 1200px;
 }
@@ -632,6 +632,13 @@ textarea {
 @media screen and (min-width: 37.5em) {
 	.no-sidebar #mastheader, .no-sidebar #primary {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1095px) {
+	.no-sidebar #mastheader, .no-sidebar #primary {
+		border-right: none;
+		border-left: none;
 	}
 }
 
@@ -654,6 +661,8 @@ textarea {
 
 .no-sidebar #colophon .site-info #menu-footer {
 	list-style: none;
+	margin: 0 auto;
+	padding: 0;
 }
 
 .no-sidebar #colophon .site-info #menu-footer li a {
@@ -673,6 +682,14 @@ textarea {
 .no-sidebar header {
 	max-width: 1200px;
 	margin: 0 auto;
+	border: 3px solid #050038;
+}
+
+@media screen and (max-width: 1095px) {
+	.no-sidebar header {
+		border-right: none;
+		border-left: none;
+	}
 }
 
 .no-sidebar main {
@@ -724,10 +741,11 @@ textarea {
 }
 
 .main-navigation ul {
-	display: none;
+	display: flex;
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
+	vertical-align: middle;
 }
 
 .main-navigation ul ul {
@@ -763,6 +781,11 @@ textarea {
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
 	left: auto;
+}
+
+.main-navigation ul li {
+	float: left;
+	align-self: center;
 }
 
 .main-navigation ul li:last-child {
