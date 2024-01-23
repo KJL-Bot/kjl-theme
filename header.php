@@ -52,7 +52,7 @@
 			<img alt="" src="<?php header_image(); ?>" width="auto<?php //echo absint( get_custom_header()->width ); ?>" height="auto<?php //echo absint( get_custom_header()->height ); ?>">
 		<?php } ?>
 		<?php if(is_404()) { ?>
-			<img alt="" src="<?php echo get_template_directory_uri() . '/images/leeres_regal.jpg'; ?>" width="auto" height="auto" style="width: 100%;">
+			<img alt="" src="<?php echo get_template_directory_uri() . '/images/kjl-bot-header.png'; ?>" width="auto" height="auto" style="width: 100%;">
 		<?php } ?>
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
