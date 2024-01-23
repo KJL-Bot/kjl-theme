@@ -13,7 +13,7 @@ get_header();
 	<main id="primary" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
-
+			<?= do_shortcode('[kjl-bot-filter]'); ?>
 			<header class="page-header">
 				<h1 class="page-title">
 					<?php
